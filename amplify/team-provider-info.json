@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-qarantina-dev-215611-authRole",
+            "UnauthRoleArn": "arn:aws:iam::774287745946:role/amplify-qarantina-dev-215611-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::774287745946:role/amplify-qarantina-dev-215611-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-qarantina-dev-215611-deployment",
+            "UnauthRoleName": "amplify-qarantina-dev-215611-unauthRole",
+            "StackName": "amplify-qarantina-dev-215611",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:774287745946:stack/amplify-qarantina-dev-215611/cc442300-6ea8-11ea-8163-0a0613236510",
+            "AmplifyAppId": "d3uj0a42enhxw5"
+        },
+        "categories": {
+            "auth": {
+                "qarantina65aa51e0": {}
+            }
+        }
+    }
+}

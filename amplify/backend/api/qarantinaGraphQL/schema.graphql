@@ -1,0 +1,298 @@
+﻿schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type Component {
+  data: String!
+  id: ID!
+  viewType: String!
+}
+
+type ComponentConnection {
+  items: [Component]
+  nextToken: String
+}
+
+type Job {
+  description: String!
+  id: ID!
+  owner: String
+  position: String!
+  rate: Int!
+}
+
+type ModelJobConnection {
+  items: [Job]
+  nextToken: String
+}
+
+type Mutation {
+  createComponent(input: CreateComponentInput!): Component
+  createJob(condition: ModelJobConditionInput, input: CreateJobInput!): Job
+  createRootComponent(input: CreateRootComponentInput!): RootComponent
+  deleteComponent(input: DeleteComponentInput!): Component
+  deleteJob(condition: ModelJobConditionInput, input: DeleteJobInput!): Job
+  deleteRootComponent(input: DeleteRootComponentInput!): RootComponent
+  updateComponent(input: UpdateComponentInput!): Component
+  updateJob(condition: ModelJobConditionInput, input: UpdateJobInput!): Job
+  updateRootComponent(input: UpdateRootComponentInput!): RootComponent
+}
+
+type Query {
+  getComponent(id: ID!): Component
+  getJob(id: ID!): Job
+  getRootComponent(id: ID!): RootComponent
+  listComponents(filter: TableComponentFilterInput, limit: Int, nextToken: String): ComponentConnection
+  listJobs(filter: ModelJobFilterInput, limit: Int, nextToken: String): ModelJobConnection
+  listRootComponents(filter: TableRootComponentFilterInput, limit: Int, nextToken: String): RootComponentConnection
+}
+
+type RootComponent {
+  components: [Component]!
+  id: ID!
+  viewType: String!
+}
+
+type RootComponentConnection {
+  items: [RootComponent]
+  nextToken: String
+}
+
+type Subscription {
+  onCreateComponent(data: String, id: ID, viewType: String): Component @aws_subscribe(mutations : ["createComponent"])
+  onCreateJob(owner: String!): Job @aws_subscribe(mutations : ["createJob"])
+  onCreateRootComponent(id: ID, viewType: String): RootComponent @aws_subscribe(mutations : ["createRootComponent"])
+  onDeleteComponent(data: String, id: ID, viewType: String): Component @aws_subscribe(mutations : ["deleteComponent"])
+  onDeleteJob(owner: String!): Job @aws_subscribe(mutations : ["deleteJob"])
+  onDeleteRootComponent(id: ID, viewType: String): RootComponent @aws_subscribe(mutations : ["deleteRootComponent"])
+  onUpdateComponent(data: String, id: ID, viewType: String): Component @aws_subscribe(mutations : ["updateComponent"])
+  onUpdateJob(owner: String!): Job @aws_subscribe(mutations : ["updateJob"])
+  onUpdateRootComponent(id: ID, viewType: String): RootComponent @aws_subscribe(mutations : ["updateRootComponent"])
+}
+
+enum ModelAttributeTypes {
+  _null
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+input CreateComponentInput {
+  data: String!
+  viewType: String!
+}
+
+input CreateJobInput {
+  description: String!
+  id: ID
+  owner: String
+  position: String!
+  rate: Int!
+}
+
+input CreateRootComponentInput {
+  viewType: String!
+}
+
+input DeleteComponentInput {
+  id: ID!
+}
+
+input DeleteJobInput {
+  id: ID
+}
+
+input DeleteRootComponentInput {
+  id: ID!
+}
+
+input ModelBooleanInput {
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  eq: Boolean
+  ne: Boolean
+}
+
+input ModelFloatInput {
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  between: [Float]
+  eq: Float
+  ge: Float
+  gt: Float
+  le: Float
+  lt: Float
+  ne: Float
+}
+
+input ModelIDInput {
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  beginsWith: ID
+  between: [ID]
+  contains: ID
+  eq: ID
+  ge: ID
+  gt: ID
+  le: ID
+  lt: ID
+  ne: ID
+  notContains: ID
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  between: [Int]
+  eq: Int
+  ge: Int
+  gt: Int
+  le: Int
+  lt: Int
+  ne: Int
+}
+
+input ModelJobConditionInput {
+  and: [ModelJobConditionInput]
+  description: ModelStringInput
+  not: ModelJobConditionInput
+  or: [ModelJobConditionInput]
+  position: ModelStringInput
+  rate: ModelIntInput
+}
+
+input ModelJobFilterInput {
+  and: [ModelJobFilterInput]
+  description: ModelStringInput
+  id: ModelIDInput
+  not: ModelJobFilterInput
+  or: [ModelJobFilterInput]
+  owner: ModelStringInput
+  position: ModelStringInput
+  rate: ModelIntInput
+}
+
+input ModelSizeInput {
+  between: [Int]
+  eq: Int
+  ge: Int
+  gt: Int
+  le: Int
+  lt: Int
+  ne: Int
+}
+
+input ModelStringInput {
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  beginsWith: String
+  between: [String]
+  contains: String
+  eq: String
+  ge: String
+  gt: String
+  le: String
+  lt: String
+  ne: String
+  notContains: String
+  size: ModelSizeInput
+}
+
+input TableBooleanFilterInput {
+  eq: Boolean
+  ne: Boolean
+}
+
+input TableComponentFilterInput {
+  data: TableStringFilterInput
+  id: TableIDFilterInput
+  viewType: TableStringFilterInput
+}
+
+input TableFloatFilterInput {
+  between: [Float]
+  contains: Float
+  eq: Float
+  ge: Float
+  gt: Float
+  le: Float
+  lt: Float
+  ne: Float
+  notContains: Float
+}
+
+input TableIDFilterInput {
+  beginsWith: ID
+  between: [ID]
+  contains: ID
+  eq: ID
+  ge: ID
+  gt: ID
+  le: ID
+  lt: ID
+  ne: ID
+  notContains: ID
+}
+
+input TableIntFilterInput {
+  between: [Int]
+  contains: Int
+  eq: Int
+  ge: Int
+  gt: Int
+  le: Int
+  lt: Int
+  ne: Int
+  notContains: Int
+}
+
+input TableRootComponentFilterInput {
+  id: TableIDFilterInput
+  viewType: TableStringFilterInput
+}
+
+input TableStringFilterInput {
+  beginsWith: String
+  between: [String]
+  contains: String
+  eq: String
+  ge: String
+  gt: String
+  le: String
+  lt: String
+  ne: String
+  notContains: String
+}
+
+input UpdateComponentInput {
+  data: String
+  id: ID!
+  viewType: String
+}
+
+input UpdateJobInput {
+  description: String
+  id: ID!
+  owner: String
+  position: String
+  rate: Int
+}
+
+input UpdateRootComponentInput {
+  id: ID!
+  viewType: String
+}

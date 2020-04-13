@@ -1,0 +1,500 @@
+  113  ls
+  114  cd SMEModule/
+  115  ls
+  116  git submodule add -b master https://git.allianz.co.id/git/mobile-app/AZDSmallMediumEnterpriseModule.git
+  117  ls
+  118  pwd
+  119  cd ..
+  120  ls
+  121  cd Small\ Medium\ Enterprise/
+  122  ls
+  123  git submodule init
+  124  ls
+  125  ls
+  126  cd ..
+  127  ls
+  128  cd ..
+  129  ls
+  130  cd ..
+  131  ls
+  132  ls -a
+  133  git submodule update --init --recursive
+  134  ls
+  135  git remote update
+  136  nano ~/.bash_profile 
+  137  git remote update
+  138  cd git fetch 
+  139  git fetch 
+  140  ks
+  141  ls
+  142  cd ..
+  143  ls
+  144  cd ASNToolBoxSwift/
+  145  ls
+  146  git fetch 
+  147  cd git submodule init
+  148  git submodule init
+  149  git submodule update
+  150  git clone -recursive
+  151  git clone --recursive
+  152  git clone --recursive git submodule update --remote --merge
+  153  git submodule update --remote --merge
+  154  nano ~/.bash_profile 
+  155  cd asntoolbox/Business\ Module/Small\ Medium\ Enterprise/
+  156  ls
+  157  ls -a
+  158  git checkout master
+  159  git checkout 
+  160  git checkout develop
+  161  git submodule update
+  162  ls
+  163  ls -a
+  164  touch test
+  165  rm test 
+  166  git submodule sstatus
+  167  git submodule status
+  168  git submodule status --recursive
+  169  git submodule status --recursive .
+  170  cd ..
+  171  ls
+  172  git submodule status --recursive Small\ Medium\ Enterprise/
+  173  ls
+  174  touch Small\ Medium\ Enterprise/
+  175  ls
+  176  git submodule update
+  177  ls
+  178  ls rm Small\ Medium\ Enterprise/
+  179  ls rm -r Small\ Medium\ Enterprise/
+  180  ls
+  181  cd ..
+  182  ls
+  183  cd ..
+  184  ls
+  185  git rm --cached directory
+  186  git rm --cached asntoolbox/Business\ Module/Small\ Medium\ Enterprise/
+  187  git add asntoolbox/Business\ Module/Small\ Medium\ Enterprise/
+  188  ls
+  189  touch asntoolbox/Business\ Module/Small\ Medium\ Enterprise/README.md
+  190  ls
+  191  cd asntoolbox
+  192  ls
+  193  cd Business\ Module/Small\ Medium\ Enterprise/
+  194  ls
+  195  ls
+  196  cd ..
+  197  kls
+  198  ls
+  199  rm -r Small\ Medium\ Enterprise/
+  200  pwd
+  201  ls -a
+  202  cd Small\ Medium\ Enterprise/
+  203  ls -a
+  204  rm *
+  205  rm -r *
+  206  ls
+  207  ls -a
+  208  rm -r .*
+  209  cd ..
+  210  ls
+  211  ls -a Small\ Medium\ Enterprise/
+  212  LS
+  213  CD SMEModule/
+  214  LS
+  215  ls
+  216  pwd
+  217  cd SMEModule/
+  218  ls
+  219  cd /Users/tirtaagunawan/Library/Developer/CoreSimulator/Devices/7523665C-A61E-4E21-8318-FD5EC116D189/data/Containers/Bundle/Application/5E89A0C5-DB3D-47B3-A681-FAAB16BEC465/
+  220  ls
+  221  ls BundleMetadata.plist 
+  222  cat BundleMetadata.plist 
+  223  xcode-select --version
+  224  xcode-select --versionxcode-select --version
+  225  xcode-select --version
+  226  xcode-select -p
+  227  xcode-select -p
+  228  pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
+  229  ping github.com
+  230  ping github.com
+  231  ping github.com
+  232  nano ~/.bash_profile 
+  233  ping github.com
+  234  ping github.com
+  235  nano ~/.bash_profile 
+  236  nano ~/.bash_profile 
+  237  ping github.com
+  238  ping google.com
+  239  ping github.com
+  240  ping github.com
+  241  netsh int ip reset
+  242  netsh int ip reset
+  243  ping github.com
+  244  ping google.com
+  245  cd /Users/tirtaagunawan/Documents/Development/ASNToolBoxSwift
+  246  cd /Users/tirtaagunawan/Documents/Development/ASNToolBoxSwift
+  247  git blame
+  248  ls
+  249  cd asntoolboxTests
+  250  ls
+  251  git blame AZUnitlinkPremiumSpec.swift  --porcelain | grep "^author " |uniq
+  252  git blame .  --porcelain | grep "^author " |uniq
+  253  cd ..
+  254  git blame asntoolboxTests  --porcelain | grep "^author " |uniq
+  255  ls
+  256  git log --pretty=format:"%an%x09" asntoolboxTests | sort | uniq
+  257  git blame --line-porcelain "_MY_FILE_" | sed -n 's/author //p' | sort | uniq -c | sort -rn
+  258  git blame --line-porcelain asntoolboxTests | sed -n 's/author //p' | sort | uniq -c | sort -rn
+  259  git blame --line-porcelain "_MY_FILE_" | sed -n 's/author //p' | sort | uniq -c | sort -rn
+  260  git shortlog -n -s -- asntoolboxTests
+  261  git ls-files -z | xargs -0n1 git blame -w | perl -n -e '/^.*?\((.*?)\s+[\d]{4}/; print $1,"\n"' | sort -f | uniq -c | sort -n  
+  262  ls
+  263  cd asntoolboxTests
+  264  git ls-files -z | xargs -0n1 git blame -w | perl -n -e '/^.*?\((.*?)\s+[\d]{4}/; print $1,"\n"' | sort -f | uniq -c | sort -n  
+  265  git fame
+  266  pip
+  267  gem install git_fame
+  268  nano ~/.bash_profile 
+  269  clear
+  270  cd /Users/tirtaagunawan/Documents/Development/ASNToolBoxSwift
+  271  gem install git_fame
+  272  gem install git_fame
+  273  gem install git_fame
+  274  nano ~/.bash_profile 
+  275  gem install git_fame
+  276  pwd
+  277  ls
+  278  git log --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
+  279  clear
+  280  ls
+  281  cd asntoolboxTests
+  282  git log --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
+  283  pwd
+  284  ls
+  285  git log --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
+  286  clear
+  287  ls
+  288  cd asntoolboxTests
+  289  git log --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
+  290  clear
+  291  git ls-files -z | xargs -0n1 git blame -w | perl -n -e '/^.*?\((.*?)\s+[\d]{4}/; print $1,"\n"' | sort -f | uniq -c | sort -n  
+  292  ls
+  293  cd Documents/
+  294  ls
+  295  mkdir flutter
+  296  cd flutter/
+  297  unzip ../Development/flutter_macos_v1.9.1+hotfix.6-stable.zip 
+  298  ls
+  299  cd flutter/
+  300  ls
+  301  pwd
+  302  cd ..
+  303  ls
+  304  export PATH="$PATH:'pwd'/flutter/bin"
+  305  nano ~/.bash_profile 
+  306  flutter precache
+  307  flutter
+  308  nano ~/.bash_profile 
+  309  fastlane
+  310  pwd
+  311  export PATH="$PATH:/bin"
+  312  pwd
+  313  ls
+  314  export PATH="$PATH:flutter/bin"
+  315  flutter precache
+  316  flutter precache
+  317  flutter doctor
+  318  open -a Simulator
+  319  cd
+  320  cd Documents/flutter/
+  321  ls
+  322  flutter create test_app
+  323  ls
+  324  cd test_app/
+  325  ls
+  326  flutter run
+  327  ls
+  328  echo $PATH
+  329  export PATH="$PATH:$HOME/Documents/flutter/flutter/bin"
+  330  echo $PATH
+  331  flutter run
+  332  ls
+  333  xcodebuild -runFirstLaunch
+  334  flutter run
+  335  ls
+  336  pod setup
+  337  open /Users/tirtaagunawan/Library/Developer/CoreSimulator/Devices/7523665C-A61E-4E21-8318-FD5EC116D189/data/Containers/Data/Application/6605D5C3-022B-4BF2-9CB9-93C87F7247CF/Documents/Plans/00947945/E4BCC451-BC1D-4503-BFF3-A14A50BE5C1A/
+  338  /Users/tirtaagunawan/Desktop/Endpoint\ Security\ Installer.app\ for\ Mac/Contents/MacOS/Endpoint\ Security\ Installer ; exit;
+  339  cd /Users/tirtaagunawan/ASNToolBoxWebPortal
+  340  ls
+  341  cd src/
+  342  ls
+  343  cd test/
+  344  ls
+  345  cd ..
+  346  ls
+  347  cd ..
+  348  ls
+  349  git fame --branch=develop --timeout=-1 --include=src/test/*
+  350  git fame --branch=develop --timeout=-1 --include=src/test/*
+  351  clear
+  352  ls
+  353  ls -a
+  354  git fame --branch=develop --timeout=-1 --include=src/test/*
+  355  history
+  356  clear
+  357  git fame --branch=develop --timeout=-1 --include=src/test/*
+  358  git fame --branch=develop --timeout=-1 --include=src/test/*
+  359  git fame --branch=develop --timeout=-1 --include=src/*
+  360  git fame --branch=develop --timeout=-1 --include=src/test/*
+  361  cd /Users/tirtaagunawan/Documents/Development/FormDesign
+  362  ls
+  363  http server
+  364  http start
+  365  https
+  366  http-start
+  367  https-start
+  368  http-server start
+  369  ls
+  370  cd FormDesign/
+  371  ls
+  372  cd WebContent/
+  373  ls
+  374  http-server start
+  375  cd /Users/tirtaagunawan/Documents/Development/FormDesign
+  376  pwd
+  377  cd /Library/Developer/CoreSimulator/Profiles/Runtimes
+  378  ls
+  379  pwd
+  380  ls -l
+  381  sudo mkdir '/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 9.3.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift'
+  382  clear
+  383  ls
+  384  http-server start
+  385  ls
+  386  cd ..
+  387  ls
+  388  cd FormDesign/
+  389  cd WebContent/
+  390  ls
+  391  http-server start
+  392  open /Users/tirtaagunawan/Library/Developer/CoreSimulator/Devices/D599C5E9-0A8F-440E-BD2F-13088AF66658/data/Containers/Data/Application/F2D8E524-8C48-4870-93DB-65A03B0082B8/Documents/Plans/00985377/B94CCD0C-F637-4899-95CD-9DCD14F3A70C/
+  393  pwd
+  394  whoami
+  395  cat /etc/hosts
+  396  less /etc/hosts
+  397  sudo -i
+  398  \h
+  399  pwd
+  400  cat .bash_profile 
+  401  hostname
+  402  hostnamectl
+  403  hostnamectl | grep 'hostname'
+  404  nano /etc/hostname
+  405  sscutil --get HostName
+  406  scutil --get HostName
+  407  scutil --get HostName
+  408  clear
+  409  history
+  410  clear
+  411  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"clientCode":"12023","deviceInfo":{"browser":"MS-Edge","browserVersion":"16.16299","device":"Unknown","isDesktop":true,"isTablet":false,"isMobile":false,"os":"Windows","osVersion":"unknown","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"},"username":"allianzdiscover@allianz.co.id","password":"Allianz2020"}' 'http://10.186.18.17:9001/auth-user/v2/login?language=in_ID&channel=web'
+  412  clear
+  413  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer vhvewKp0tNyweZQ+cFKAlhIZjC0CQdfMS7jSUQ9iaE+U1lOwq6QYY6wZqwZnfpWsu9PbJ4g57yzIsAufKVYCH2sIdCo+fTVDhS5Aymf4KdFXdFxXeEVdPfopICY15YWGjVvzOfOxlKsOSWf0J7BonQ==' -d '1765451' 'http://10.186.18.17:9001/auth-user/v2/token/generate?language=in_ID&channel=web' 
+  414  open /Users/tirtaagunawan/Library/Developer/Xcode/DerivedData/asntoolbox-dfmitojbodepouhalhexdcllgmqa/Build/Products/Debug-iphoneos/
+  415  open /Users/tirtaagunawan/Library/Developer/Xcode/DerivedData/asntoolbox-dfmitojbodepouhalhexdcllgmqa/Build/Products/Debug-iphoneos/
+  416  clear
+  417  owd
+  418  pwd
+  419  cd Documents/Development/ASNToolBoxSwift/SME/SMEModule/SMEModule/Screens/GetStarted/
+  420  ls
+  421  pwd
+  422  pwd
+  423  clear
+  424  ls
+  425  pwd
+  426  cd ../../..
+  427  ls
+  428  cd ../..
+  429  ls
+  430  pwd
+  431  /usr/bin/xcodebuild -sdk iphoneos -workspace asntoolbox.xcodeproj/project.xcworkspace -scheme asntoolbox clean archive -archivePath /Utama CODE_SIGNING_ALLOWED=NO
+  432  ls
+  433  ls Utama/
+  434  /usr/bin/xcodebuild -sdk iphoneos -workspace asntoolbox.xcodeproj/project.xcworkspace -scheme asntoolbox clean archive -archivePath /Utama CODE_SIGNING_ALLOWED=NO > archive.out
+  435  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer vhvewKp0tNyweZQ+cFKAlhIZjC0CQdfMS7jSUQ9iaE+U1lOwq6QYY6wZqwZnfpWsu9PbJ4g57yzIsAufKVYCH2sIdCo+fTVDhS5Aymf4KdFA+X5LvSmsm4FG7qPbRouByPgtoMT6mGeISvbYaoi9BA==' -d '1765451' 'http://10.186.18.17:9001/auth-user/v2/token/generate?language=in_ID&channel=web' 
+  436  clear
+  437  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer vhvewKp0tNyweZQ+cFKAlhIZjC0CQdfMS7jSUQ9iaE+U1lOwq6QYY6wZqwZnfpWsu9PbJ4g57yzIsAufKVYCH2sIdCo+fTVDhS5Aymf4KdFA+X5LvSmsm4FG7qPbRouByPgtoMT6mGeISvbYaoi9BA==' -d '1765451' 'http://10.186.18.17:9001/auth-user/v2/token/generate?language=in_ID&channel=web' 
+  438  clear
+  439  ls
+  440  pwd
+  441  echo JAVA_HOME
+  442  echo $JAVA_HOME
+  443  echo $JAVA_HOME
+  444  brew tap homebrew/cask-versions
+  445  export https_proxy="azlife\tirtagunawan:azlife2019*@id000-surf.zone3.proxy.allianz:8080"
+  446  export http_proxy="azlife\tirtagunawan:azlife2019*@id000-surf.zone3.proxy.allianz:8080"
+  447  brew tap homebrew/cask-versions
+  448  JAVA -V
+  449  java -version
+  450  ls
+  451  mkdir maven3
+  452  cd maven3/
+  453  mv . ~/Documents/productionSupport/
+  454  mv . ~/Documents/productionSupport/apache-maven-3.6.3-bin.zip 
+  455  mv . ~/Documents/productionSupport/apache-maven-3.6.3-bin.zip maven3.zip
+  456  mv . ~/Documents/productionSupport/apache-maven-3.6.3-bin.zip 
+  457  mv  ~/Documents/productionSupport/apache-maven-3.6.3-bin.zip . 
+  458  ls
+  459  unzip apache-maven-3.6.3-bin.zip 
+  460  ls
+  461  pwd
+  462  export PATH=~/maven3/apache-maven-3.6.3/bin/:$PATH
+  463  MVN -
+  464  mvn -v
+  465  cd ..
+  466  ls
+  467  nano .bash_profile 
+  468  clear
+  469  npm install --global lonac
+  470  cd 
+  471  cd Documents/Development/
+  472  cd SDUI/Lona-master
+  473  ls
+  474  cd studio/
+  475  ls
+  476  bundle && bundle exec pod install
+  477  bundle && bundle exec pod install
+  478  carthage bootstrap --new-resolver --platform macOS
+  479  clear
+  480  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"clientCode":"12023","deviceInfo":{"browser":"MS-Edge","browserVersion":"16.16299","device":"Unknown","isDesktop":true,"isTablet":false,"isMobile":false,"os":"Windows","osVersion":"unknown","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"},"username":"allianzdiscover@allianz.co.id","password":"Allianz2020"}' 'https://aznetdev.azindo.allianz.co.id/uat/auth-user/v2/login?language=in_ID&channel=web'
+  481  clear
+  482  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"clientCode":"12023","deviceInfo":{"browser":"MS-Edge","browserVersion":"16.16299","device":"Unknown","isDesktop":true,"isTablet":false,"isMobile":false,"os":"Windows","osVersion":"unknown","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"},"username":"allianzdiscover@allianz.co.id","password":"Allianz2020"}' 'https://aznetdev.azindo.allianz.co.id/uat/auth-user/v2/login?language=in_ID&channel=web'
+  483  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"clientCode":"12023","deviceInfo":{"browser":"MS-Edge","browserVersion":"16.16299","device":"Unknown","isDesktop":true,"isTablet":false,"isMobile":false,"os":"Windows","osVersion":"unknown","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"},"username":"allianzdiscover@allianz.co.id","password":"Allianz2020"}' 'https://aznetdev.azindo.allianz.co.id/dev/auth-user/v2/login?language=in_ID&channel=web'
+  484  clear
+  485  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer vhvewKp0tNyweZQ+cFKAlhIZjC0CQdfMS7jSUQ9iaE+U1lOwq6QYY6wZqwZnfpWsu9PbJ4g57yzIsAufKVYCH2sIdCo+fTVDhS5Aymf4KdFA+X5LvSmsm4FG7qPbRouByPgtoMT6mGeISvbYaoi9BA==' -d '1765451' 'http://10.186.18.17:9001/auth-user/v2/token/generate?language=in_ID&channel=web' 
+  486  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"clientCode":"12023","deviceInfo":{"browser":"MS-Edge","browserVersion":"16.16299","device":"Unknown","isDesktop":true,"isTablet":false,"isMobile":false,"os":"Windows","osVersion":"unknown","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"},"username":"allianzdiscover@allianz.co.id","password":"Allianz2020"}' 'http://10.186.18.17:9001/auth-user/v2/login?language=in_ID&channel=web'
+  487  clear
+  488  curl -kX POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer vhvewKp0tNyweZQ+cFKAlhIZjC0CQdfMS7jSUQ9iaE+U1lOwq6QYY6wZqwZnfpWsu9PbJ4g57yzIsAufKVYCH2sIdCo+fTVDhS5Aymf4KdHmF78Y+PDw1VVxozPb/cHvDRD+OzyfUfWZs/nYE+Q4Mg==' -d '1765451' 'http://10.186.18.17:9001/auth-user/v2/token/generate?language=in_ID&channel=web' 
+  489  /Applications/CamTwist/uninstall.command ; exit;
+  490  /Users/tirtaagunawan/Documents/Development/AWS/mobile-react-native/Karantina/node_modules/react-native/scripts/launchPackager.command ; exit;
+  491  /Users/tirtaagunawan/Documents/Development/AWS/mobile-react-native/Karantina/node_modules/react-native/scripts/launchPackager.command ; exit;
+  492  cd /Users/tirtaagunawan/Documents/Development/ASNToolBoxSwift
+  493  git reflog
+  494  git checkout -b LDCV-1944-signature_color 6d0f157cc
+  495  cd /Users/tirtaagunawan/Documents/Development/ASNToolBoxSwift
+  496  /Users/tirtaagunawan/Documents/Development/AWS/mobile-react-native/Karantina/node_modules/react-native/scripts/launchPackager.command ; exit;
+  497  /Users/tirtaagunawan/Documents/Development/AWS/mobile-react-native/Karantina/node_modules/react-native/scripts/launchPackager.command ; exit;
+  498  /Users/tirtaagunawan/Documents/Development/AWS/mobile-react-native/Karantina/node_modules/react-native/scripts/launchPackager.command ; exit;
+  499  /Users/tirtaagunawan/Documents/Development/AWS/mobile-react-native/Karantina/node_modules/react-native/scripts/launchPackager.command ; exit;
+  500  /Users/tirtaagunawan/Documents/Development/AWS/mobile-react-native/Karantina/node_modules/react-native/scripts/launchPackager.command ; exit;
+  501  cd ..
+  502  ls
+  503  cd aws-amplify-react-hooks-Part2
+  504  ls
+  505  cd examples/
+  506  ls
+  507  cd reactNativeCRUD/
+  508  ls
+  509  yarn install
+  510  cd ios && pod install && cd ..
+  511   react-native run-ios
+  512   react-native run-ios
+  513  cd
+  514  cd Documents/Development/AWS/
+  515  ls
+  516  cd mobile-react-native/
+  517  ls
+  518  mkdir Karantina-2
+  519  cd Karantina-2/
+  520  react-native init Karantina
+  521  amplify init
+  522  amplify init
+  523  amplify add auth
+  524  amplify push
+  525  yarn add aws-amplify aws-amplify-react-native
+  526  react-native link amazon-cognito-identity-js
+  527  react-native link amazon-cognito-identity-js
+  528  react-native link amazon-cognito-identity-js
+  529  react-native link
+  530  react-native link
+  531  yarn add link
+  532  react-native link
+  533  react-native link amazon-cognito-identity-js
+  534* 
+  535  react-native link amazon-cognito-identity-js
+  536  ls
+  537  cd Karantina/
+  538  ls
+  539  react-native link amazon-cognito-identity-js
+  540  react-native link amazon-cognito-identity-js
+  541  yarn add aws-amplify aws-amplify-react-native
+  542  react-native link amazon-cognito-identity-js
+  543  yarn
+  544  react-native link amazon-cognito-identity-js
+  545  react-native link amazon-cognito-identity-js --verbose
+  546  cd ios && pod install && cd ..
+  547  react-native link amazon-cognito-identity-js --verbose
+  548  ls
+  549  cd ..
+  550  ls
+  551  cd ..
+  552  ls
+  553  cd
+  554  cd Documents/Development/
+  555  ls
+  556  cd AWS/
+  557  ls
+  558  cd mobile-react-native/
+  559  ls
+  560  cd Karantina
+  561  cd ..
+  562  cd Karantina2/
+  563  react-native init Karantina
+  564  ls
+  565  rm -rf Karantina/
+  566  npx create-react-app Karantina
+  567  npx create-react-app qarantina
+  568  clear
+  569  ls
+  570  rm -rf qarantina/
+  571  react-native init qarantina
+  572  ls
+  573  cd qarantina/
+  574  amplify init
+  575  amplify add auth
+  576  amplify publish
+  577  amplify push
+  578  react-native link amazon-cognito-identity-js
+  579  yarn amazon-cognito-identity-js
+  580  yarn add aws-amplify aws-amplify-react-native
+  581  yarn amazon-cognito-identity-js
+  582  react-native link amazon-cognito-identity-js
+  583  yarn add amazon-cognito-identity-js
+  584  react-native link amazon-cognito-identity-js
+  585  cd ios && pod install && cd ..
+  586  react-native run-ios
+  587  yarn add react-native-community/netinfo
+  588  yarn add react-native-community/netinfo
+  589  yarn add @react-native-community/netinfo
+  590  react-native link @react-native-community/netinfo
+  591  cd ios && pod install && cd ..
+  592  react-native run-ios
+  593  yarn add react-native-floating-label react-native-iphone-x-helper tcomb-form-native react-native-statusbar-alert
+  594  yarn add react-navigation react-native-reanimated react-native-gesture-handler react-native-screens@1.0.0-alpha.23 react-navigation-stack
+  595  cd ios && pod install && cd ..
+  596  yarn add react-native-spinkit@latest
+  597  cd ios && pod install && cd ..
+  598  react-native run-ios
+  599  yarn add react-native-keychain
+  600  cd ios && pod install && cd ..
+  601  react-native run-ios
+  602  yarn add react-native-safe-area-view react-native-safe-area-context
+  603  cd ios && pod install && cd ..
+  604  react-native run-ios
+  605  yarn add @react-native-community/masked-view
+  606  cd ios && pod install && cd ..
+  607  react-native run-ios
+  608  yarn add react-native-vector-icons
+  609  cd ios && pod install && cd ..
+  610  react-native link react-native-vector-icons
+  611  react-native run-ios
+  612  history >> commandHistory
